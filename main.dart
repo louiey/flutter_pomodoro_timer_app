@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro_timer/screens/timer_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pomodo Timer App',
+      title: 'Pomodoro Timer App',
+      home: TimerScreen(),
     );
   }
 }
