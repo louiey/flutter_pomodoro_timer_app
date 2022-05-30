@@ -24,6 +24,14 @@ class _TimerScreenState extends State<TimerScreen> {
     _pomodoroCount = 0;
   }
 
+  void running() {
+    setState(() {
+      _timerStatus = TimerStatus.running;
+      print("[=>] " + _timerStatus.toString());
+      runTimer();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> _runningButtons = [
